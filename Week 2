@@ -8,4 +8,8 @@ When designing an app:
   - Use fonts consistently
   - Keep locations of buttons and size of buttons consistent
   - Navigation bars and back buttons
-  
+
+Segue's
+  - When a segue is created it enables the button to invoke an internal event handler which transitions to the new page upon clicking
+  - Unwind Segue = free up memory of the previous screen, go back pages
+  - 
