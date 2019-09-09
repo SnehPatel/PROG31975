@@ -81,6 +81,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BgImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-eX-lCz">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uRj-ca-lfE"/>
@@ -89,7 +93,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pfy-v1-VW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cV2-5u-Zys" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="858"/>
+            <point key="canvasLocation" x="-58.020989505247378" y="856.79999999999995"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="Ozr-Q5-TbS">
@@ -113,6 +117,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BgImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hDQ-7Y-az6">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0ei-az-dy8"/>
@@ -121,7 +129,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkX-hk-z7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FSw-gm-xUy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="577" y="137"/>
+            <point key="canvasLocation" x="576.1619190404798" y="136.80000000000001"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="5ka-cc-tMK">
@@ -145,6 +153,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BgImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uZi-Uf-cO4">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ho1-nd-sVC"/>
@@ -153,7 +165,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FeE-oO-ZKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Ila-Uk-oGe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="576" y="858"/>
+            <point key="canvasLocation" x="575.26236881559225" y="856.79999999999995"/>
         </scene>
     </scenes>
     <resources>
