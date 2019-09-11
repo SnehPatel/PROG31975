@@ -13,3 +13,6 @@ Segue's
   - When a segue is created it enables the button to invoke an internal event handler which transitions to the new page upon clicking
   - Unwind Segue = free up memory of the previous screen, go back pages
   -
+
+
+-Copy items check it when adding items to project in assests 
