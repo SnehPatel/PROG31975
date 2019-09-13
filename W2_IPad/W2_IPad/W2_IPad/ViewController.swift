@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var webView : WKWebView!
+    @IBOutlet var activity : UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let urlAddress = URL(string: "http://www.cnn.com")
+        let url = URLRequest(url: urlAddress!)
+        webView.load(url)
+        
     }
 
 
