@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
-
+    
+    // Outlet for webkit
+    @IBOutlet var wbPage : WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Url variable
+        let urlAddress = URL(string: "https://www.google.ca")
+        // Connect varible to URLRequest
+        let url = URLRequest(url: urlAddress!)
+        //Load url
+        wbPage.load(url)
 
         // Do any additional setup after loading the view.
     }

@@ -9,9 +9,24 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
+    
+    @IBOutlet var lbVolume : UILabel!
+    @IBOutlet var slVolume : UISlider!
+    
+    func updateLabel(){
+        let vol = slVolume.value
+        let strVol = String(format: "%.0f", vol)
+        lbVolume.text = strVol
+    }
+    
+    @IBAction func sliderValSChanged(sender : UISlider){
+        updateLabel()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateLabel()
 
         // Do any additional setup after loading the view.
     }
