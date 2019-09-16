@@ -64,17 +64,18 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let urlAddress = URL(string: "http://www.bluejays.com")
-        let url = URLRequest(url: urlAddress!)
-        webView.load(url)
-        
-        // self = this (java)
-        webView.navigationDelegate = self
-        
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            let urlAddress = URL(string: "http://www.bluejays.com")
+            let url = URLRequest(url: urlAddress!)
+            webView.load(url)
+            // self = this (java)
+            webView.navigationDelegate = self
+        }else{
+            webView.isHidden = true
+            activity.isHidden = true
+        }
         
     }
-
 
 }
 
