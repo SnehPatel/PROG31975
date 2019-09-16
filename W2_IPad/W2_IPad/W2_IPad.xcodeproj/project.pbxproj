@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9D7542232FDE7F00027973 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D7541232FDE7F00027973 /* MyData.swift */; };
 		3FA76D7B232BD7A100B189EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA76D7A232BD7A100B189EC /* AppDelegate.swift */; };
 		3FA76D7D232BD7A100B189EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA76D7C232BD7A100B189EC /* ViewController.swift */; };
 		3FA76D80232BD7A100B189EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA76D7E232BD7A100B189EC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F9D7541232FDE7F00027973 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 		3FA76D77232BD7A100B189EC /* W2_IPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W2_IPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA76D7A232BD7A100B189EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA76D7C232BD7A100B189EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				3FA76D81232BD7A200B189EC /* Assets.xcassets */,
 				3FA76D83232BD7A200B189EC /* LaunchScreen.storyboard */,
 				3FA76D86232BD7A200B189EC /* Info.plist */,
+				3F9D7541232FDE7F00027973 /* MyData.swift */,
 			);
 			path = W2_IPad;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9D7542232FDE7F00027973 /* MyData.swift in Sources */,
 				3FA76D7D232BD7A100B189EC /* ViewController.swift in Sources */,
 				3FA76D7B232BD7A100B189EC /* AppDelegate.swift in Sources */,
 			);

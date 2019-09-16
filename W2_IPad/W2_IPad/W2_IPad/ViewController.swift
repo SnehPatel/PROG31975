@@ -20,6 +20,10 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     @IBOutlet var webView : WKWebView!
     @IBOutlet var activity : UIActivityIndicatorView!
     
+    func doTheUpdate(){
+        let data : MyData
+    }
+    
     // Used to close keyboard after completing input
     // Connect from storyboard > select textView > drag delegate to yellow circle
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
