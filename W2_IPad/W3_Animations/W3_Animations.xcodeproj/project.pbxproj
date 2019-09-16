@@ -22,6 +22,7 @@
 		3F9D7581232FF7E600027973 /* CameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D757D232FF7E600027973 /* CameraIcon.png */; };
 		3F9D7582232FF7E600027973 /* SeachIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D757E232FF7E600027973 /* SeachIcon.png */; };
 		3F9D7583232FF7E600027973 /* GPSIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D757F232FF7E600027973 /* GPSIcon.png */; };
+		3F9D7586232FFCDE00027973 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9D7585232FFCDE00027973 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3F9D757D232FF7E600027973 /* CameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraIcon.png; sourceTree = "<group>"; };
 		3F9D757E232FF7E600027973 /* SeachIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeachIcon.png; sourceTree = "<group>"; };
 		3F9D757F232FF7E600027973 /* GPSIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPSIcon.png; sourceTree = "<group>"; };
+		3F9D7585232FFCDE00027973 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9D7586232FFCDE00027973 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 			children = (
 				3F9D754E232FF5EC00027973 /* W3_Animations */,
 				3F9D754D232FF5EC00027973 /* Products */,
+				3F9D7584232FFCDE00027973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +136,14 @@
 				3F9D754F232FF5EC00027973 /* AppDelegate.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		3F9D7584232FFCDE00027973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F9D7585232FFCDE00027973 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
