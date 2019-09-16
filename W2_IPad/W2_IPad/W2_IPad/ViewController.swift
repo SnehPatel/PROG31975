@@ -21,7 +21,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     @IBOutlet var activity : UIActivityIndicatorView!
     
     func doTheUpdate(){
-        let data : MyData
+        let data : MyData = .init()
+        data.initWithStuff(theName: tfName.text!, theEmail: tfEmail.text!)
     }
     
     // Used to close keyboard after completing input
