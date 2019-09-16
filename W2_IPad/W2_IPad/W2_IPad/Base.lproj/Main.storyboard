@@ -64,6 +64,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="updateLabelsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u43-vc-UFz"/>
+                                </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWh-NV-xzw">
                                 <rect key="frame" x="0.0" y="505" width="768" height="526"/>

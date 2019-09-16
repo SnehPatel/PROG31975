@@ -23,6 +23,24 @@ class ViewController: UIViewController, WKNavigationDelegate, UITextFieldDelegat
     func doTheUpdate(){
         let data : MyData = .init()
         data.initWithStuff(theName: tfName.text!, theEmail: tfEmail.text!)
+        
+        lbName.text = data.savedName
+        lbEmail.text = data.savedEmail
+    }
+    
+    // Alert box
+    @IBAction func updateLabels(sender : UIButton){
+        let alert = UIAlertController(title: "Warning", message: "Are you sure?", preferredStyle: .alert)
+        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: {
+            (alert : UIAlertAction!) in
+            self.doTheUpdate()
+            self.dismiss(animated: true, completion: nil)
+            
+        })
+        alert.addAction(yesAction)
+        alert.addAction(noAction)
+        present(alert, animated: true)
     }
     
     // Used to close keyboard after completing input

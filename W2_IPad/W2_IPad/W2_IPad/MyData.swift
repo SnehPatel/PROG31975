@@ -22,7 +22,7 @@ class MyData: NSObject {
     
     func initWithStuff(theName : String, theEmail: String){
         savedName = theName
-        savedName = theEmail
+        savedEmail = theEmail
     }
     
 }
