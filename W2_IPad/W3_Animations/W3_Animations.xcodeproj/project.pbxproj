@@ -12,11 +12,6 @@
 		3F9D7555232FF5EC00027973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7553232FF5EC00027973 /* Main.storyboard */; };
 		3F9D7557232FF5EC00027973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7556232FF5EC00027973 /* Assets.xcassets */; };
 		3F9D755A232FF5EC00027973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7558232FF5EC00027973 /* LaunchScreen.storyboard */; };
-		3F9D756B232FF6CD00027973 /* leafs.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7566232FF6CD00027973 /* leafs.png */; };
-		3F9D756C232FF6CD00027973 /* fc.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7567232FF6CD00027973 /* fc.png */; };
-		3F9D756D232FF6CD00027973 /* jays.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7568232FF6CD00027973 /* jays.jpg */; };
-		3F9D756E232FF6CD00027973 /* raptors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7569232FF6CD00027973 /* raptors.jpg */; };
-		3F9D756F232FF6CD00027973 /* marlies.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D756A232FF6CD00027973 /* marlies.jpeg */; };
 		3F9D7573232FF6E900027973 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7570232FF6E800027973 /* song1.mp3 */; };
 		3F9D7574232FF6E900027973 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7571232FF6E800027973 /* song3.mp3 */; };
 		3F9D7575232FF6E900027973 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7572232FF6E900027973 /* song2.mp3 */; };
@@ -37,11 +32,6 @@
 		3F9D7556232FF5EC00027973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9D7559232FF5EC00027973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9D755B232FF5EC00027973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F9D7566232FF6CD00027973 /* leafs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leafs.png; sourceTree = "<group>"; };
-		3F9D7567232FF6CD00027973 /* fc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fc.png; sourceTree = "<group>"; };
-		3F9D7568232FF6CD00027973 /* jays.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jays.jpg; sourceTree = "<group>"; };
-		3F9D7569232FF6CD00027973 /* raptors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raptors.jpg; sourceTree = "<group>"; };
-		3F9D756A232FF6CD00027973 /* marlies.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marlies.jpeg; sourceTree = "<group>"; };
 		3F9D7570232FF6E800027973 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 		3F9D7571232FF6E800027973 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
 		3F9D7572232FF6E900027973 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
@@ -101,11 +91,6 @@
 				3F9D757D232FF7E600027973 /* CameraIcon.png */,
 				3F9D757F232FF7E600027973 /* GPSIcon.png */,
 				3F9D757E232FF7E600027973 /* SeachIcon.png */,
-				3F9D7567232FF6CD00027973 /* fc.png */,
-				3F9D7568232FF6CD00027973 /* jays.jpg */,
-				3F9D7566232FF6CD00027973 /* leafs.png */,
-				3F9D756A232FF6CD00027973 /* marlies.jpeg */,
-				3F9D7569232FF6CD00027973 /* raptors.jpg */,
 				3F9D7556232FF5EC00027973 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -208,20 +193,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9D7575232FF6E900027973 /* song2.mp3 in Resources */,
-				3F9D756C232FF6CD00027973 /* fc.png in Resources */,
 				3F9D7580232FF7E600027973 /* BgImage.jpg in Resources */,
 				3F9D7582232FF7E600027973 /* SeachIcon.png in Resources */,
 				3F9D7583232FF7E600027973 /* GPSIcon.png in Resources */,
 				3F9D7573232FF6E900027973 /* song1.mp3 in Resources */,
 				3F9D755A232FF5EC00027973 /* LaunchScreen.storyboard in Resources */,
-				3F9D756E232FF6CD00027973 /* raptors.jpg in Resources */,
 				3F9D7581232FF7E600027973 /* CameraIcon.png in Resources */,
 				3F9D7557232FF5EC00027973 /* Assets.xcassets in Resources */,
 				3F9D7555232FF5EC00027973 /* Main.storyboard in Resources */,
-				3F9D756F232FF6CD00027973 /* marlies.jpeg in Resources */,
 				3F9D7574232FF6E900027973 /* song3.mp3 in Resources */,
-				3F9D756D232FF6CD00027973 /* jays.jpg in Resources */,
-				3F9D756B232FF6CD00027973 /* leafs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

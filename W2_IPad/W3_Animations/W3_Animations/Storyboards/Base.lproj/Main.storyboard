@@ -55,50 +55,110 @@
             </objects>
             <point key="canvasLocation" x="138.61607142857142" y="137.68115942028987"/>
         </scene>
-        <!--View Controller-->
+        <!--Fly View Controller-->
         <scene sceneID="DA2-q9-yya">
             <objects>
-                <viewController id="VM3-va-qMc" sceneMemberID="viewController">
+                <viewController id="VM3-va-qMc" customClass="FlyViewController" customModule="W3_Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PBz-MH-tck">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BgImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XKy-H4-NrL">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9f-nb-u5w">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fly" id="mRJ-1e-9Fp">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="yut-L7-PuJ">
+                                            <connections>
+                                                <segue destination="KwR-O9-e9r" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="3rC-uH-f3l"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2iy-KU-X7R"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x9f-8G-Te1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KwR-O9-e9r" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="135" y="941"/>
+            <point key="canvasLocation" x="134.59821428571428" y="940.57971014492762"/>
         </scene>
-        <!--View Controller-->
+        <!--Fade View Controller-->
         <scene sceneID="Pi1-aQ-P2d">
             <objects>
-                <viewController id="UlN-Ur-ETs" sceneMemberID="viewController">
+                <viewController id="UlN-Ur-ETs" customClass="FadeViewController" customModule="W3_Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X58-JN-gHu">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BgImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5my-Lr-J8l">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxp-kO-daa">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fade" id="cgP-FL-uwp">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="LRU-2s-Eqj">
+                                            <connections>
+                                                <segue destination="4uF-I3-EIk" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="l0d-Eg-oYk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tbw-fK-HTk"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9xZ-bm-Qec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4uF-I3-EIk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="782" y="121"/>
+            <point key="canvasLocation" x="781.47321428571422" y="120.28985507246378"/>
         </scene>
-        <!--View Controller-->
+        <!--Spin View Controller-->
         <scene sceneID="YUU-P0-AiH">
             <objects>
-                <viewController id="ZJI-Ch-ND5" sceneMemberID="viewController">
+                <viewController id="ZJI-Ch-ND5" customClass="SpinViewController" customModule="W3_Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EkT-Tq-AAF">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BgImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9pU-P1-JQa">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kyV-oK-bun">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Spin" id="FOL-0Y-PIv">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="EE5-6x-62v">
+                                            <connections>
+                                                <segue destination="zan-Ab-QtI" kind="unwind" unwindAction="unwindToHomeVCWithSender:" id="pGh-yv-v5z"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CIK-Yx-jNT"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NV0-yJ-26o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zan-Ab-QtI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="781" y="941"/>
+            <point key="canvasLocation" x="780.80357142857144" y="940.57971014492762"/>
         </scene>
     </scenes>
     <resources>
