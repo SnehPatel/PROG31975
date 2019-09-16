@@ -35,6 +35,11 @@ class SpinViewController: UIViewController {
         // Play sound
         soundPlayer?.play()
     }
+    
+    // Stop playing sound on leaving screen
+    override func viewDidDisappear(_ animated: Bool) {
+        soundPlayer?.stop()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

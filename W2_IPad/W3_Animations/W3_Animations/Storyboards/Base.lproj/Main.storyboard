@@ -160,11 +160,17 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Qi-wg-2AE">
                                 <rect key="frame" x="207" y="193" width="482" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volumeDidChangeWithSender:" destination="ZJI-Ch-ND5" eventType="valueChanged" id="ccd-cC-naG"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CIK-Yx-jNT"/>
                     </view>
+                    <connections>
+                        <outlet property="volSlider" destination="8Qi-wg-2AE" id="XBi-yh-Ok3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NV0-yJ-26o" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zan-Ab-QtI" userLabel="Exit" sceneMemberID="exit"/>
