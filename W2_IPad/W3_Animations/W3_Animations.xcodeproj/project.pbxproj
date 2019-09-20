@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1DA7512334FB60002D88DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1DA7502334FB60002D88DC /* QuartzCore.framework */; };
 		3F9D7550232FF5EC00027973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D754F232FF5EC00027973 /* AppDelegate.swift */; };
 		3F9D7552232FF5EC00027973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D7551232FF5EC00027973 /* ViewController.swift */; };
 		3F9D7555232FF5EC00027973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D7553232FF5EC00027973 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1DA7502334FB60002D88DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3F9D754C232FF5EC00027973 /* W3_Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W3_Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9D754F232FF5EC00027973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9D7551232FF5EC00027973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1DA7512334FB60002D88DC /* QuartzCore.framework in Frameworks */,
 				3F9D7586232FFCDE00027973 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +144,7 @@
 		3F9D7584232FFCDE00027973 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F1DA7502334FB60002D88DC /* QuartzCore.framework */,
 				3F9D7585232FFCDE00027973 /* AVFoundation.framework */,
 			);
 			name = Frameworks;

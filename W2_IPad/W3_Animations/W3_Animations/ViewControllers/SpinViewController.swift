@@ -16,6 +16,8 @@ class SpinViewController: UIViewController {
     @IBOutlet var volSlider : UISlider!
     var soundPlayer : AVAudioPlayer?
     
+    var spinLayer : CALayer?
+    
     @IBAction func volumeDidChange(sender : UISlider){
         soundPlayer?.volume = volSlider.value
     }
@@ -43,6 +45,23 @@ class SpinViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let spinImage = UIImage(named: "SeachIcon.png")
+        spinLayer = CALayer.init()
+        spinLayer?.contents = spinImage?.cgImage
+        spinLayer?.bounds = CGRect(x: 0, y: 0, width: 150, height: 150)
+        spinLayer?.position = CGPoint(x: 200, y: 200)
+        
+        self.view.layer.addSublayer(spinLayer!)
+        
+        let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        //rotateAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        rotateAnimation.fromValue = 0
+        rotateAnimation.toValue = 2 * Double.pi
+        rotateAnimation.isRemovedOnCompletion = false
+        rotateAnimation.duration = 1.0
+        rotateAnimation.repeatCount = Float.infinity
+        spinLayer?.add(rotateAnimation, forKey: "MyRotationAnimation")
         
         // Do any additional setup after loading the view.
     }
