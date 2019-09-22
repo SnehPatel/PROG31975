@@ -10,6 +10,8 @@ import UIKit
 
 class AboutMeController: UIViewController {
 
+    // About Me controller for future functionality
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

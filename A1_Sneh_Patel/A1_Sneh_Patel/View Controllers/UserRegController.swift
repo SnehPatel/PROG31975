@@ -10,6 +10,7 @@ import UIKit
 
 class UserRegController: UIViewController {
     
+    // Assign variables
     @IBOutlet var lbAge : UILabel!
     @IBOutlet var slAge : UISlider!
     @IBOutlet var lblText : UILabel!
@@ -17,6 +18,7 @@ class UserRegController: UIViewController {
     @IBOutlet var tfName : UITextField!
     @IBOutlet var tfEmail : UITextField!
     
+    // Add alert box to submit button
     @IBAction func submit(sender : UIButton){
         
         let alert = UIAlertController(title: "Greetings " + tfName.text! + "!", message: "Please confirm your email: " + tfEmail.text!, preferredStyle: .alert)
@@ -31,16 +33,19 @@ class UserRegController: UIViewController {
         present(alert, animated: true)
     }
     
+    // Update the Age label based on the slider
     func updateLabel(){
         let age = slAge.value
         let strAge = String(format: "%0.f" ,age)
         lbAge.text = strAge
     }
     
+    // Add function to slider
     @IBAction func sliderValSChanged(sender : UISlider){
         updateLabel()
     }
-
+    
+    // Add the update function to load with view
     override func viewDidLoad() {
         super.viewDidLoad()
         

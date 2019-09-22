@@ -11,6 +11,8 @@ import WebKit
 
 class SearchWebController: UIViewController {
     
+    
+    // Assign variable for webView
     @IBOutlet var wbPage : WKWebView!
 
     override func viewDidLoad() {
