@@ -49,20 +49,35 @@ class MyTableViewController: UIViewController, UITableViewDataSource, UITableVie
         share.backgroundColor = .blue
         
         return [share, favourite, more]
-        
     }
     
-    // Method 1: How many tables cells are there? typed: numberOfRowsInSection
+    // Method to swipe from the left
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let modifyAction = UIContextualAction(style: .normal, title: "Modify") { (ac, view, success) in
+            
+            // Button swipe must be manually dismissed
+            print("Modify button tapped!")
+            success(true)
+        }
+        
+        // Set the BGcolor of "Modify" to red
+        modifyAction.backgroundColor = .red
+        
+        return UISwipeActionsConfiguration(actions: [modifyAction])
+    }
+    
+    // Method 1 (Swipe Right): How many tables cells are there? typed: numberOfRowsInSection
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listData.count
     }
     
-    // Method 2: Set the row height - Not mandatory more for visual purposes
+    // Method 2 (Swipe Right): Set the row height - Not mandatory more for visual purposes
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
     
-    // Method 3: This method is called over and over to populate the data, also used when the screen is swiped up or down for cell leaving/entering screen until the tableview is filled.
+    // Method 3 (Swipe Right): This method is called over and over to populate the data, also used when the screen is swiped up or down for cell leaving/entering screen until the tableview is filled.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Dequeue cell - cell leaving the screen
