@@ -13,12 +13,51 @@ class MyTableViewController: UIViewController, UITableViewDataSource, UITableVie
     // Empty Array for data
     var listData : Array<String> = []
     
+    // Method used to make cell swipeable
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    // Method to add swipeable actions
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        // Create the option for "More", with style normal and print the string into console
+        let more = UITableViewRowAction(style: .normal, title: "More", handler: {
+            action,index in
+                print("More button tapped!")
+        })
+        
+        // Set BGcolor of "More" button to light gray
+        more.backgroundColor = .lightGray
+        
+        // Create the option for "Favourite"
+        let favourite = UITableViewRowAction(style: .normal, title: "Favourite", handler: {
+            action, index in
+                print("Favourite button tapped!")
+        })
+        
+        // Set the BGcolor of "Favourite" to orange
+        favourite.backgroundColor = .orange
+        
+        // Create the option for "Share"
+        let share = UITableViewRowAction(style: .normal, title: "Share", handler: {
+            action,index in
+                print("Share button tapped!")
+        })
+        
+        // Set the BGcolor of "Share" to blue
+        share.backgroundColor = .blue
+        
+        return [share, favourite, more]
+        
+    }
+    
     // Method 1: How many tables cells are there? typed: numberOfRowsInSection
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listData.count
     }
     
-    // Method 2: Set the row height
+    // Method 2: Set the row height - Not mandatory more for visual purposes
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
