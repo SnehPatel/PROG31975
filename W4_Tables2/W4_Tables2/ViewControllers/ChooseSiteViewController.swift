@@ -8,7 +8,48 @@
 
 import UIKit
 
-class ChooseSiteViewController: UIViewController {
+// import TableViewDataSource and UI TableViewDelegate
+class ChooseSiteViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var listData = ["Jays",
+                    "Leafs",
+                    "Raptors",
+                    "Marlies",
+                    "FC"]
+    
+    var siteData = ["http://www.bluejays.com",
+                    "http://www.torontomapleleafs.com",
+                    "http://www.torontoraptors.com",
+                    "http://www.marlies.ca",
+                    "http://www.torontofc.ca"]
+    
+    var imageData = ["jays.jpg",
+                     "leafs.png",
+                     "raptors.jpg",
+                     "marlies.jpeg",
+                     "fc.png"]
+    
+    // Method 1: numberOfRowsInSection
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listData.count
+    }
+    
+    // Method 2: heightForRowAt
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    // Method 3: cellForRowAt
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
+        
+        let rowNum = indexPath.row
+        tableCell.textLabel?.text = listData[rowNum]
+        
+        return tableCell
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
