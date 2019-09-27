@@ -41,10 +41,16 @@ class ChooseSiteViewController: UIViewController, UITableViewDataSource, UITable
     
     // Method 3: cellForRowAt
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
+        
+        //let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
+        
+        // Custom Cell
+        let tableCell : SiteCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? SiteCell ?? SiteCell(style: .default, reuseIdentifier: "cell")
         
         let rowNum = indexPath.row
-        tableCell.textLabel?.text = listData[rowNum]
+        tableCell.primaryLabel.text = listData[rowNum]
+        tableCell.secondaryLabel.text = siteData[rowNum]
+        tableCell.myImageView.image = UIImage(named: imageData[rowNum])
         
         return tableCell
     }

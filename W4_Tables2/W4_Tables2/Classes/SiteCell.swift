@@ -38,6 +38,14 @@ class SiteCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // Hard code position of elements in cell
+    override func layoutSubviews() {
+        
+        primaryLabel.frame = CGRect(x: 100, y: 5, width: 460, height: 30)
+        secondaryLabel.frame = CGRect(x: 100, y: 40, width: 460, height: 20)
+        myImageView.frame = CGRect(x: 5, y: 5, width: 45, height: 45)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
