@@ -7,13 +7,36 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewSiteViewController: UIViewController {
+class ViewSiteViewController: UIViewController, WKNavigationDelegate {
+    
+    @IBOutlet var webView : WKWebView!
+    @IBOutlet var activity : UIActivityIndicatorView!
 
+    // Start animating activity indicator
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        activity.isHidden = false
+        activity.startAnimating()
+    }
+    
+    // Stop animating indicator
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activity.isHidden = true
+        activity.stopAnimating()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Get team url from app delegate
+        let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let urlAddress = URL(string: mainDelegate.selectedURL)
+        let url = URLRequest(url: urlAddress!)
+        webView.load(url)
+        webView.navigationDelegate = self
+        
     }
     
 

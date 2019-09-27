@@ -29,6 +29,20 @@ class ChooseSiteViewController: UIViewController, UITableViewDataSource, UITable
                      "marlies.jpeg",
                      "fc.png"]
     
+    @IBAction func unwindtoChooseVC(sender : UIStoryboardSegue){
+        
+    }
+    
+    // Select a row to point to website
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        mainDelegate.selectedURL = siteData[indexPath.row]
+        
+        performSegue(withIdentifier: "ChooseSegueToView", sender: nil)
+        
+    }
+    
     // Method 1: numberOfRowsInSection
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listData.count

@@ -99,7 +99,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Team's Website" id="yQZ-Ve-j9A">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="Ey7-92-jsQ"/>
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="Ey7-92-jsQ">
+                                            <connections>
+                                                <segue destination="O74-ml-gvB" kind="unwind" unwindAction="unwindtoChooseVCWithSender:" id="cTe-J3-UJR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -121,8 +125,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kPH-5b-Xvr"/>
                     </view>
+                    <connections>
+                        <outlet property="activity" destination="BmC-nZ-pDe" id="L8G-pm-Qrj"/>
+                        <outlet property="webView" destination="1WY-Qf-teG" id="YV0-SW-2et"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AA-ce-Ysl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="O74-ml-gvB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1473.913043478261" y="137.94642857142856"/>
         </scene>
