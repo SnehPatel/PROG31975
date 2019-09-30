@@ -38,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         
+        // Location of where all the resources files are images, database, sounds
+        let databasePathFromApp = Bundle.main.resourcePath?.appending("/" + databaseName)
+        
+        try? fileManager.copyItem(atPath: databasePathFromApp!, toPath: databasePath)
         
     }
 
