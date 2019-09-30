@@ -12,11 +12,33 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var databaseName : String = "MyDatabase.db"
+    var databasePath : String = ""
+    var people : [MyData] = []
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Point to the db file
+        let documentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        
+        let documentDir = documentPath[0]
+        databasePath = documentDir.appending("/" + databaseName)
+        
         return true
+    }
+    
+    func checkAndCreateDatabase(){
+        var success = false
+        let fileManager = FileManager.default
+        
+        success = fileManager.fileExists(atPath: databasePath)
+        
+        if success{
+            return
+        }
+        
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

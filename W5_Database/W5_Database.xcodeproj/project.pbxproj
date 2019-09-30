@@ -16,6 +16,7 @@
 		3F9922F523425B620025FA25 /* MyDatabase.db in Resources */ = {isa = PBXBuildFile; fileRef = 3F9922F423425B620025FA25 /* MyDatabase.db */; };
 		3F9922F723425D380025FA25 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9922F623425D380025FA25 /* MyTableViewController.swift */; };
 		3F9922F923425D590025FA25 /* MyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9922F823425D590025FA25 /* MyPickerViewController.swift */; };
+		3F9922FB234263810025FA25 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9922FA234263810025FA25 /* MyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3F9922F423425B620025FA25 /* MyDatabase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyDatabase.db; sourceTree = "<group>"; };
 		3F9922F623425D380025FA25 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		3F9922F823425D590025FA25 /* MyPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickerViewController.swift; sourceTree = "<group>"; };
+		3F9922FA234263810025FA25 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3F9922DB23425A880025FA25 /* AppDelegate.swift */,
+				3F9922FA234263810025FA25 /* MyData.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				3F9922DE23425A880025FA25 /* ViewController.swift in Sources */,
 				3F9922F723425D380025FA25 /* MyTableViewController.swift in Sources */,
 				3F9922F923425D590025FA25 /* MyPickerViewController.swift in Sources */,
+				3F9922FB234263810025FA25 /* MyData.swift in Sources */,
 				3F9922DC23425A880025FA25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
