@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let documentDir = documentPath[0]
         databasePath = documentDir.appending("/" + databaseName)
         
+        checkAndCreateDatabase()
+        
         return true
     }
     
