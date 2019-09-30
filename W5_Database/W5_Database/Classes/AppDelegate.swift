@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite3
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,6 +29,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         checkAndCreateDatabase()
         
         return true
+    }
+    
+    func readDataFromDatabase(){
+        people.removeAll()
+        var db : OpaquePointer? = nil
+        
+        // Open a connection to the DB
+        if sqlite3_open(self.databasePath, &db) == SQLITE_OK{
+            var queryStatement : OpaquePointer? = nil
+            var queryStatementString : String = "select * from entries"
+            
+            if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK{
+                while sqlite3_step(queryStatement) == SQLITE_ROW{
+                    let id : Int = Int(sqlite3_column_int(queryStatement, 0))
+                    let cName = sqlite3_column_text(queryStatement, 1)
+                    let cEmail = sqlite3_column_text(queryStatement, 2)
+                    let cFood = sqlite3_column_text(queryStatement, 3)
+                    
+                    let name = String(cString: cName!)
+                    let email = String(cString: cEmail!)
+                    let food = String(cString: cFood!)
+                    
+                    let data : MyData = .init()
+                    data.initWithData(theRow: id, theName: name, theEmail: email, theFood: food)
+                    people.append(data)
+                    
+                    print("Query result: ")
+                    print("\(id) | \(name) | \(email) | \(food)")
+                }
+                sqlite3_finalize(queryStatement)
+                
+            }else {
+                print("SELECT statement could not be prepared!")
+            }
+            sqlite3_close(db)
+            
+        }else {
+            print("Unable to open database!")
+        }
     }
     
     func checkAndCreateDatabase(){
