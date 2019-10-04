@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F528DE82347752800DDC234 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F528DE72347752800DDC234 /* SiteCell.swift */; };
 		3F9922DC23425A880025FA25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9922DB23425A880025FA25 /* AppDelegate.swift */; };
 		3F9922DE23425A880025FA25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9922DD23425A880025FA25 /* ViewController.swift */; };
 		3F9922E123425A880025FA25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9922DF23425A880025FA25 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F528DE72347752800DDC234 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SiteCell.swift; path = ../../../W4_Tables2/W4_Tables2/Classes/SiteCell.swift; sourceTree = "<group>"; };
 		3F9922D823425A880025FA25 /* W5_Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W5_Database.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9922DB23425A880025FA25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9922DD23425A880025FA25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		3F9922EE23425AA50025FA25 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3F528DE72347752800DDC234 /* SiteCell.swift */,
 				3F9922DB23425A880025FA25 /* AppDelegate.swift */,
 				3F9922FA234263810025FA25 /* MyData.swift */,
 			);
@@ -196,6 +199,7 @@
 				3F9922F723425D380025FA25 /* MyTableViewController.swift in Sources */,
 				3F9922F923425D590025FA25 /* MyPickerViewController.swift in Sources */,
 				3F9922FB234263810025FA25 /* MyData.swift in Sources */,
+				3F528DE82347752800DDC234 /* SiteCell.swift in Sources */,
 				3F9922DC23425A880025FA25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
