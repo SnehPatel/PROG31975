@@ -154,6 +154,14 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNP-29-u74">
+                                <rect key="frame" x="0.0" y="264" width="414" height="369"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="g42-ob-ClO" id="TV8-aV-uI6"/>
+                                    <outlet property="delegate" destination="g42-ob-ClO" id="Hs8-Mf-jzV"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vEZ-Ai-hv2"/>
@@ -162,7 +170,7 @@
                 <exit id="Tdg-BI-VTy" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ynb-6q-kYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1520" y="138"/>
+            <point key="canvasLocation" x="1518.840579710145" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
