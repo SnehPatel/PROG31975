@@ -30,6 +30,17 @@ class MyTableViewController: UIViewController, UITableViewDelegate, UITableViewD
         return tableCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rowNum = indexPath.row
+        let alertController = UIAlertController(title: mainDelegate.people[rowNum].name, message: mainDelegate.people[rowNum].food, preferredStyle: .actionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true)
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
