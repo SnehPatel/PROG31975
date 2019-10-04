@@ -17,6 +17,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var tbEmail : UITextField!
     @IBOutlet var tbFood : UITextField!
     
+    // Setting the previous inputted data as defaults
+    func rememberEnteredData(){
+        let defaults = UserDefaults.standard
+        defaults.set(tbName.text, forKey: "lastName")
+        defaults.set(tbEmail.text, forKey: "lastEmail")
+        defaults.set(tbFood.text, forKey: "lastFood")
+        
+        defaults.synchronize()
+    }
+    
     @IBAction func addPerson(sender : UIButton){
         let person : MyData = .init()
         person.initWithData(theRow: 0, theName: tbName.text!, theEmail: tbEmail.text!, theFood: tbFood.text!)
@@ -37,6 +47,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         alertController.addAction(cancelAction)
         present(alertController, animated: true)
+        
+        rememberEnteredData()
         
     }
     
@@ -66,7 +78,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let defaults = UserDefaults.standard
+        
+        if let name = defaults.object(forKey: "lastName") as? String{
+            tbName.text = name
+        }
+        
+        if let email = defaults.object(forKey: "lastEmail") as? String{
+            tbEmail.text = email
+        }
+        
+        if let food = defaults.object(forKey: "lastFood") as? String{
+            tbFood.text = food
+        }
+        
     }
 
 
