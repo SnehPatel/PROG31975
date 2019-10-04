@@ -43,7 +43,8 @@ class MyPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        mainDelegate.readDataFromDatabase()
+        
     }
     
 

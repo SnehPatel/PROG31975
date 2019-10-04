@@ -71,6 +71,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func insertIntoDatabase(person : MyData) -> Bool{
+        
+        var returnCode : Bool = true
+        var db : OpaquePointer? = nil
+        
+        if sqlite3_open(self.databasePath, &db) == SQLITE_OK{
+            
+            var insertStatementString = "insert into entries values(NULL, ?, ?, ?)"
+            
+            var insertStatement : OpaquePointer? = nil
+            
+            if sqlite3_prepare(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK{
+                
+                let nameStr = person.name as! NSString
+                let emailStr = person.email as! NSString
+                let foodStr = person.food as! NSString
+                
+                sqlite3_bind_text(insertStatement, 1, nameStr.utf8String, -1, nil)
+                sqlite3_bind_text(insertStatement, 2, emailStr.utf8String, -1, nil)
+                sqlite3_bind_text(insertStatement, 3, foodStr.utf8String, -1, nil)
+                
+                if sqlite3_step(insertStatement) == SQLITE_DONE{
+                    let rowID = sqlite3_last_insert_rowid(db)
+                    print("INSERT successfull, row ID is \(rowID).")
+                }else{
+                    print("Could not INSERT row!")
+                    returnCode = false
+                }
+                
+                sqlite3_finalize(insertStatement)
+                
+            }else{
+                print("INSERT statement could not be prepared!")
+                returnCode = false
+            }
+            
+            sqlite3_close(db)
+            
+        }else{
+            print("Unable to open database!")
+            returnCode = false
+        }
+        return returnCode
+    }
+    
     func checkAndCreateDatabase(){
         var success = false
         let fileManager = FileManager.default
