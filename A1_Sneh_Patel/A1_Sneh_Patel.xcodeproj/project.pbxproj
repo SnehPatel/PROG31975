@@ -20,6 +20,11 @@
 		3F1DA746233478E0002D88DC /* AboutMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1DA745233478E0002D88DC /* AboutMeController.swift */; };
 		3F1DA74C2334792B002D88DC /* SearchWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1DA74B2334792B002D88DC /* SearchWebController.swift */; };
 		3F1DA74F23347C9E002D88DC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1DA74E23347C9E002D88DC /* WebKit.framework */; };
+		3F9B023C2352BE940041F9DD /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B02372352BE930041F9DD /* girl.png */; };
+		3F9B023D2352BE940041F9DD /* owl.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B02382352BE930041F9DD /* owl.png */; };
+		3F9B023E2352BE940041F9DD /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B02392352BE930041F9DD /* man.png */; };
+		3F9B023F2352BE940041F9DD /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B023A2352BE940041F9DD /* dog.png */; };
+		3F9B02402352BE940041F9DD /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B023B2352BE940041F9DD /* cat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		3F1DA745233478E0002D88DC /* AboutMeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeController.swift; sourceTree = "<group>"; };
 		3F1DA74B2334792B002D88DC /* SearchWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWebController.swift; sourceTree = "<group>"; };
 		3F1DA74E23347C9E002D88DC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3F9B02372352BE930041F9DD /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		3F9B02382352BE930041F9DD /* owl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owl.png; sourceTree = "<group>"; };
+		3F9B02392352BE930041F9DD /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
+		3F9B023A2352BE940041F9DD /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		3F9B023B2352BE940041F9DD /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,11 @@
 		3F1DA736233471BB002D88DC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3F9B023B2352BE940041F9DD /* cat.png */,
+				3F9B023A2352BE940041F9DD /* dog.png */,
+				3F9B02372352BE930041F9DD /* girl.png */,
+				3F9B02392352BE930041F9DD /* man.png */,
+				3F9B02382352BE930041F9DD /* owl.png */,
 				3F1DA74123347336002D88DC /* Bg.jpg */,
 				3F1DA737233471F5002D88DC /* house.png */,
 				3F1DA739233471F5002D88DC /* information.png */,
@@ -187,12 +202,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9B023D2352BE940041F9DD /* owl.png in Resources */,
 				3F1DA73D233471F5002D88DC /* information.png in Resources */,
+				3F9B023C2352BE940041F9DD /* girl.png in Resources */,
 				3F1DA74223347336002D88DC /* Bg.jpg in Resources */,
 				3F1DA73B233471F5002D88DC /* house.png in Resources */,
 				3F1DA72A233470C5002D88DC /* LaunchScreen.storyboard in Resources */,
+				3F9B02402352BE940041F9DD /* cat.png in Resources */,
+				3F9B023E2352BE940041F9DD /* man.png in Resources */,
 				3F1DA727233470C5002D88DC /* Assets.xcassets in Resources */,
 				3F1DA73C233471F5002D88DC /* www.png in Resources */,
+				3F9B023F2352BE940041F9DD /* dog.png in Resources */,
 				3F1DA725233470C4002D88DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserRegController: UIViewController {
+class UserRegController: UIViewController, UITextFieldDelegate {
     
     // Assign variables
     @IBOutlet var lbAge : UILabel!
@@ -17,6 +17,11 @@ class UserRegController: UIViewController {
     
     @IBOutlet var tfName : UITextField!
     @IBOutlet var tfEmail : UITextField!
+    
+    // Return button the the keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
+    }
     
     // Add alert box to submit button
     @IBAction func submit(sender : UIButton){

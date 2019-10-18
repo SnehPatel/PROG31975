@@ -9,11 +9,24 @@
 import UIKit
 import WebKit
 
-class SearchWebController: UIViewController {
+class SearchWebController: UIViewController, WKNavigationDelegate {
     
     
     // Assign variable for webView
     @IBOutlet var wbPage : WKWebView!
+    @IBOutlet var activity : UIActivityIndicatorView!
+    
+    // Start animating activity indicator
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        activity.isHidden = false
+        activity.startAnimating()
+    }
+    
+    // Stop animating indicator
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activity.isHidden = true
+        activity.stopAnimating()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +37,7 @@ class SearchWebController: UIViewController {
         let url = URLRequest(url: urlAddress!)
         //Load url
         wbPage.load(url)
+        wbPage.navigationDelegate = self
 
         // Do any additional setup after loading the view.
     }
